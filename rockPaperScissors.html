@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website With Games</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="navbar-cont">
+      <nav id="navbar">
+        <ul id="navbar-ul">
+          <li class="navbar-li">
+            <a class="navbar-a" href="index.html">Main page</a>
+          </li>
+
+          <li class="navbar-li">
+            <a class="navbar-a" href="calculator.html">Calculator</a>
+          </li>
+    
+          <li class="navbar-li">
+            <a class="navbar-a" href="guessAnumber.html">Guess the number</a>
+          </li>
+    
+          <li class="navbar-li">
+            <a class="navbar-a" id="checked" href="#">Rock Paper Scissors</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="rps-page">
+      <div id="rps">
+        <h1 id="rps-title">Rock Paper Scissors</h1>
+
+        <form class="form">
+          <!-- <input type="text" id="rps-user" size="40" placeholder="Your turn"> -->
+
+          <h1 style="margin: 0;">Your turn</h1>
+
+          <select id="rps-user">
+            <option>rock</option>
+            <option>paper</option>
+            <option>scissors</option>
+          </select>
+
+          <div id="rps-labels">
+            <label id="user-turn">Your turn: </label>
+            <label id="computer-turn">Computer turn: </label>
+            <label id="result">result</label>
+          </div>  
+
+          <a href="#" onClick="rockPaperScissors();" id="rps-button">Play</a>
+        </form>
+
+        <div id="rps-bottom"></div>
+      </div>
+    </div>
+
+    <div id="footer">
+      &copy; wtfshe4ka
+    </div>
+  </body>
+</html>

@@ -1,0 +1,424 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar-cont {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: #CCCCCC;
+  left: 0px;
+  top: 0px;
+}
+
+#navbar {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  font-size: large;
+  top: 0px;
+  left: 0px;
+}
+
+#navbar-ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+}
+
+.navbar-li {
+  text-align: center;
+  /* transition: .1s; */
+  cursor: pointer;
+  border-top: none;
+}
+
+.navbar-li:hover {
+  background-color: #AAAAAA;
+}
+
+.navbar-a {
+  font-size: 20px;
+  padding: 20px 30px 20px 30px;
+  display: block;
+  text-decoration: none;
+  color: black;
+} 
+
+#checked {
+  background-color: #AAAAAA;
+}
+
+
+
+
+#main-page {
+  margin-top: 100px;
+}
+
+#title {
+  display: flex;
+  flex-direction: row;
+}
+
+#smile {
+  padding: 10px;
+  font-size: 42px;
+  animation-name: smile;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 20s;
+}
+
+@keyframes smile {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(90deg); }
+  50% { transform: rotate(90deg); }
+  55% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#main-h1 {
+  font-size: 50px;
+}
+
+#main-p {
+  font-size: 25px;
+}
+
+#games-cont {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.games {
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.games-name{
+  background-color: #CCCCCC;
+  margin: 0px;
+  padding: .1px;
+}
+
+.games-text {
+  font-size: 25px;
+}
+
+.games-p {
+  margin: 0px;
+  padding: 15px;
+}
+
+#footer {
+  position: fixed;
+  left: 0; bottom: 0;
+  padding: 10px;
+  background-color: #434445;
+  color: #a4a4a4;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+
+
+
+
+
+#calc-page {
+  text-align: center;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+}
+
+#calc {
+  height: 600px;
+  width: 350px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#calc-title {
+  margin: 0px;
+  padding: 20px 0px;
+  background-color: #CCCCCC;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.form {
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+#number1 {
+  margin-top: 30px;
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  border-color: black;
+}
+
+#verbList {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  border-color: black;
+}
+
+#number2 {
+  margin-top: 10px;
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  border-color: black;
+}
+
+#calc-answer {
+  margin-top: 50px;
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  border-color: black;
+  color: black;
+}
+
+#button-count {
+  margin-top: 50px;
+  font-size: 25px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  color: black;
+}
+
+#button-count:hover {
+  background-color: #CCCCCC;
+}
+
+.calc-buttons {
+  cursor: pointer;
+  margin-top: 50px;
+  font-size: 25px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+  height: 42px;
+  background-color: white;
+}
+
+.calc-buttons:hover {
+  background-color: #CCCCCC;
+}
+
+#calc-bottom {
+  height: 70px;
+  margin-top: 79px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #CCCCCC;
+}
+
+
+
+
+
+
+#guessNumberPage {
+  text-align: center;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+}
+
+#guessNumber {
+  height: 500px;
+  width: 350px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#guessNumber-title {
+  margin: 0px;
+  padding: 20px 0px;
+  background-color: #CCCCCC;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#userAnswer {
+  margin-top: 30px;
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  border-color: black;
+}
+
+#biggerSmaller {
+  margin-top: 30px;
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  border-color: black;
+  color: black;
+}
+
+#attempts {
+  margin: 30px 0px 50px;
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  border-color: black;
+  color: black;
+}
+
+#button-guess {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 25px;
+  height: 42px;
+  padding: 5px;
+}
+
+#button-guess:hover {
+  background-color: #CCCCCC;
+}
+
+#guess-bottom {
+  height: 70px;
+  margin-top: 66px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #CCCCCC;
+}
+
+#guess-reset {
+  cursor: pointer;
+  font-size: 25px;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+  height: 42px;
+  background-color: white;
+}
+
+#guess-reset:hover {
+  background-color: #CCCCCC;
+}
+
+
+
+
+
+#rps-page {
+  text-align: center;
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+}
+
+#rps {
+  height: 514px;
+  width: 350px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+#rps-title {
+  margin: 0px;
+  padding: 20px 0px;
+  background-color: #CCCCCC;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#rps-user {
+  margin-top: 10px;
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  border-color: black;
+}
+
+#rps-labels {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 30px 15px;
+}
+
+#user-turn {
+  margin-top: 30px;
+  font-size: 25px;
+  width: 320px;
+  text-align: left;
+  border-color: black;
+}
+
+#computer-turn {
+  margin-top: 30px;
+  font-size: 25px;
+  width: 320px;
+  text-align: left;
+  border-color: black;
+}
+
+#result {
+  font-size: 25px;
+  width: 320px;
+  text-align: center;
+  border-color: black;
+  margin-top: 20px;
+}
+
+#rps-button {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 25px;
+  height: 42px;
+  padding: 5px;
+  ;
+}
+
+#rps-button:hover {
+  background-color: #CCCCCC;
+}
+
+#rps-bottom {
+  height: 70px;
+  margin-top: 62px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #CCCCCC;
+}

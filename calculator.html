@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Website With Games</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="navbar-cont">
+      <nav id="navbar">
+        <ul id="navbar-ul">
+          <li class="navbar-li">
+            <a class="navbar-a" href="index.html">Main page</a>
+          </li>
+
+          <li class="navbar-li">
+            <a class="navbar-a" id="checked" href="#">Calculator</a>
+          </li>
+    
+          <li class="navbar-li">
+            <a class="navbar-a" href="guessAnumber.html">Guess the number</a>
+          </li>
+    
+          <li class="navbar-li">
+            <a class="navbar-a" href="rockPaperScissors.html">Rock Paper Scissors</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="calc-page">
+
+      <div id="calc">
+        <h1 id="calc-title">Simple Calculator</h1>
+
+        <form class="form">
+          <input type="text" id="number1" size="40" placeholder="First number" autocomplete="off">
+
+          <select id="verbList">
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>/</option>
+          </select>
+
+          <input type="text" id="number2" size="40" placeholder="Second number" autocomplete="off">
+
+          <input type="text" id="calc-answer" size="40" placeholder="Answer" autocomplete="off" disabled>
+
+          <a href="#" onClick="calc();" id="button-count">Count</a>
+          <input type="reset" class="calc-buttons" value="Clear" autocomplete="off">
+        </form>
+
+        <div id="calc-bottom"></div>
+      </div>
+    </div>
+
+    <div id="footer">
+      &copy; wtfshe4ka
+    </div>
+  </body>
+</html>
